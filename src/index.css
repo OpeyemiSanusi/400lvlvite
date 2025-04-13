@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 @layer base {
   :root {
@@ -29,9 +29,17 @@
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: hsl(var(--border));
   }
+
   body {
-    @apply bg-[#FCFDF8] text-foreground;
+    background-color: #FCFDF8;
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer components {
+  .content-spacing>*+* {
+    margin-top: 2rem;
   }
 }

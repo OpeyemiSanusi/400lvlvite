@@ -7,10 +7,11 @@ import About from '@/pages/About';
 import Contact from '@/pages/Contact';
 import TopicGenerator from '@/pages/tools/TopicGenerator';
 import ReferenceConverter from '@/pages/tools/ReferenceConverter';
-import PlagiarismChecker from '@/pages/tools/PlagiarismChecker';
 import ResearchQuestions from '@/pages/tools/ResearchQuestions';
-import LiteratureReview from '@/pages/tools/LiteratureReview';
+import ChapterRewriter from './pages/tools/ChapterRewriter';
 import MethodologyAdvisor from '@/pages/tools/MethodologyAdvisor';
+import RelevantPaper from '@/pages/tools/RelevantPaper';
+import PastProjectDirectory from './pages/tools/PastProjectDirectory';
 
 function App() {
   return (
@@ -24,10 +25,11 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/tools/topic-generator" element={<TopicGenerator />} />
+            <Route path="/tools/past-projects" element={<PastProjectDirectory />} />
             <Route path="/tools/reference-converter" element={<ReferenceConverter />} />
-            <Route path="/tools/plagiarism-checker" element={<PlagiarismChecker />} />
+            <Route path="/tools/relevant-paper" element={<RelevantPaper />} />
             <Route path="/tools/research-questions" element={<ResearchQuestions />} />
-            <Route path="/tools/literature-review" element={<LiteratureReview />} />
+            <Route path="/tools/chapter-rewriter" element={<ChapterRewriter />} />
             <Route path="/tools/methodology-advisor" element={<MethodologyAdvisor />} />
           </Routes>
         </main>

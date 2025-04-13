@@ -23,25 +23,25 @@ const tools = [
     href: "/tools/reference-converter"
   },
   {
-    title: "Plagiarism Checker",
-    description: "Check your work for potential plagiarism",
+    title: "Find Relevant Papers",
+    description: "Find relevant papers based on your research terms",
     icon: FileCog,
     href: "/tools/plagiarism-checker"
   },
   {
-    title: "Research Questions",
+    title: "Generate Background of Study",
     description: "Generate and refine research questions",
     icon: HelpCircle,
     href: "/tools/research-questions"
   },
   {
-    title: "Literature Review",
+    title: "Chapter Rewriter",
     description: "Organize and structure your literature review",
     icon: BookMarked,
     href: "/tools/literature-review"
   },
   {
-    title: "Methodology Advisor",
+    title: "Topic Pitch Generator",
     description: "Get guidance on research methodology",
     icon: FileStack,
     href: "/tools/methodology-advisor"

@@ -1,16 +1,13 @@
-import path from 'path';
-import react from '@vitejs/plugin-react';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import path from 'path'
 
 export default defineConfig({
-  base: '/400lvl/', // <-- 🛠️ ADD THIS LINE
   plugins: [react()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
-    },
-  },
-  optimizeDeps: {
-    exclude: ['lucide-react'],
-  },
-});
+      'spin-rewriter-api': path.resolve(__dirname, 'node_modules/spin-rewriter-api')
+    }
+  }
+})
